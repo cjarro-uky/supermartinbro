@@ -125,7 +125,7 @@ Mostor2 = sprites.create(img("""
         8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8
         . . . 8 8 8 . 8 8 8 8 8 . 8 . .
         """),
-    SpriteKind.player)
+    SpriteKind.enemy)
 Mostor2.set_position(500, 170)
 Mostor2.set_velocity(-40, 30)
 Mostor2.set_flag(SpriteFlag.BOUNCE_ON_WALL, True)
