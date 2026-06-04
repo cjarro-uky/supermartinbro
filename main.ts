@@ -1,6 +1,26 @@
 namespace SpriteKind {
     export const Rest = SpriteKind.create()
 }
+
+// Little girl sprite with pink dress
+let girlSprite = img`
+    . . . . f f f f f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c 8 c f . . . . . . .
+    . . . . f 8 8 8 f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . . f f f . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    `
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     Martin.setVelocity(0, -100)
 })
