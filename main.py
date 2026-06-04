@@ -15,6 +15,25 @@ def on_on_overlap2(sprite2, otherSprite2):
 sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_on_overlap2)
 
 Martin: Sprite = None
+# Little girl sprite with pink dress
+girlSprite = img("""
+    . . . . f f f f f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c 8 c f . . . . . . .
+    . . . . f 8 8 8 f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . . f f f . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    """)
 Martin = sprites.create(img("""
         . . . . . . . . . . . . . . . .
         . . . . f f f f f f . . . . . .
@@ -61,6 +80,8 @@ YouWon = sprites.create(img("""
         """),
     SpriteKind.Rest)
 YouWon.set_position(500, 10)
+Girl = sprites.create(girlSprite, SpriteKind.Rest)
+Girl.set_position(460, 10)
 Mostor = sprites.create(img("""
         . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . .
