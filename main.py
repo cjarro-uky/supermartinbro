@@ -81,6 +81,10 @@ Mostor = sprites.create(img("""
         """),
     SpriteKind.enemy)
 Mostor.set_position(10, 230)
+Mostor.set_velocity(50, 0)
+Mostor.set_flag(SpriteFlag.BOUNCE_ON_WALL, True)
+Mostor.set_flag(SpriteFlag.STAY_IN_SCREEN, True)
+Mostor.ay = 0
 Mostor2 = sprites.create(img("""
         . . . . 8 8 . . . 8 8 8 8 . . .
         8 8 . 8 8 8 8 8 8 8 8 8 8 . . .
