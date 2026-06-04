@@ -73,6 +73,8 @@ let YouWon = sprites.create(img`
     ..cbbc............cbbc..
     `, SpriteKind.Rest)
 YouWon.setPosition(500, 10)
+let Girl = sprites.create(girlSprite, SpriteKind.Rest)
+Girl.setPosition(460, 10)
 let Mostor = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
