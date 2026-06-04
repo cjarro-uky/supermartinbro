@@ -1,6 +1,25 @@
 @namespace
 class SpriteKind:
     Rest = SpriteKind.create()
+# Little girl sprite with pink dress
+girlSprite = img("""
+    . . . . f f f f f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . f c 8 c f . . . . . . .
+    . . . . f 8 8 8 f . . . . . . .
+    . . . . f c c c f . . . . . . .
+    . . . . . f f f . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . . 2 2 2 . . . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . 2 2 2 2 2 2 2 . . . . . .
+    . . . . 2 2 2 2 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    . . . . . 2 . . 2 . . . . . . .
+    """)
 
 def on_up_pressed():
     Martin.set_velocity(0, -100)
@@ -61,6 +80,8 @@ YouWon = sprites.create(img("""
         """),
     SpriteKind.Rest)
 YouWon.set_position(500, 10)
+Girl = sprites.create(girlSprite, SpriteKind.Rest)
+Girl.set_position(460, 10)
 Mostor = sprites.create(img("""
         . . . . . . . . . . . . . . . .
         . . . . . . . . . . . . . . . .
@@ -85,6 +106,7 @@ Mostor.set_velocity(50, 0)
 Mostor.set_flag(SpriteFlag.BOUNCE_ON_WALL, True)
 Mostor.set_flag(SpriteFlag.STAY_IN_SCREEN, True)
 Mostor.ay = 0
+Mostor.set_position(10, 230)
 Mostor2 = sprites.create(img("""
         . . . . 8 8 . . . 8 8 8 8 . . .
         8 8 . 8 8 8 8 8 8 8 8 8 8 . . .
