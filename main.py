@@ -105,3 +105,7 @@ Mostor2 = sprites.create(img("""
         """),
     SpriteKind.player)
 Mostor2.set_position(500, 170)
+Mostor2.set_velocity(-40, 30)
+Mostor2.set_flag(SpriteFlag.BOUNCE_ON_WALL, True)
+Mostor2.set_flag(SpriteFlag.STAY_IN_SCREEN, True)
+Mostor2.ay = 0
